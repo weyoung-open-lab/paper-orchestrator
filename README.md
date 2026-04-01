@@ -288,32 +288,6 @@ Instead of converting the whole paper in one pass, the system converts sections 
 
 Users can upload a journal LaTeX template ZIP. The system detects the entry `.tex` file and injects generated LaTeX body and BibTeX into the template project.
 
-## Figures
-
-### System Overview
-
-![System Overview](figure/1.jpg)
-
-### Pipeline Architecture
-
-![Pipeline Architecture](figure/2.jpg)
-
-### Automated Metric Comparison
-
-![Automated Metrics](figure/3.jpg)
-
-### Human Evaluation
-
-![Human Evaluation](figure/4.jpg)
-
-### Ablation Study
-
-![Ablation Study](figure/5.jpg)
-
-### Efficiency Analysis
-
-![Efficiency Analysis](figure/6.jpg)
-
 ## Experimental Results
 
 According to the accompanying paper, PaperOrchestrator reports the following main results:
