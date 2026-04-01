@@ -320,21 +320,24 @@ It outperforms multiple reported baselines including `GPT-4o`, `GPT-4-Turbo`, `G
 
 ## Installation
 
-```bash
+
 # 1) Clone the repository
+```bash
 git clone https://github.com/<your-username>/paper-orchestrator.git
 cd paper-orchestrator
-
+```
 # 2) Create and activate a virtual environment
+```bash
 python -m venv .venv
 source .venv/bin/activate
-
+```
 # Windows:
 # .venv\Scripts\activate
 
 # 3) Install dependencies
+```bash
 pip install gradio anthropic
-
+```
 # Optional:
 # pip install -r requirements.project.txt
 
@@ -350,7 +353,7 @@ export ANTHROPIC_BASE_URL=your_optional_base_url
 
 ```bash
 python app/gradio_app.py
-
+```
 ##Example Usage
 Step 1: Initialize
 - Anthropic API key
