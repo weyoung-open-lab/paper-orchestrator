@@ -320,10 +320,110 @@ It outperforms multiple reported baselines including `GPT-4o`, `GPT-4-Turbo`, `G
 
 ## Installation
 
-### 1. Clone the Repository
-
 ```bash
+# 1) Clone the repository
 git clone https://github.com/<your-username>/paper-orchestrator.git
 cd paper-orchestrator
 
-### 2.
+# 2) Create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate
+
+# Windows:
+# .venv\Scripts\activate
+
+# 3) Install dependencies
+pip install gradio anthropic
+
+# Optional:
+# pip install -r requirements.project.txt
+
+# 4) Set environment variables
+export ANTHROPIC_API_KEY=your_api_key
+export ANTHROPIC_BASE_URL=your_optional_base_url
+
+# Windows PowerShell:
+# $env:ANTHROPIC_API_KEY="your_api_key"
+# $env:ANTHROPIC_BASE_URL="your_optional_base_url"
+
+## Running the App
+
+```bash
+python app/gradio_app.py
+
+##Example Usage
+Step 1: Initialize
+- Anthropic API key
+- model
+- language
+
+Step 2: Add Inputs
+- experiment brief
+- key code
+- result text
+- figure / table descriptions
+- uploaded images
+- optional seed references
+- optional journal template ZIP
+
+Step 3: Run the Pipeline
+- outline generation
+- section generation
+- full-paper integration
+- polishing
+- BibTeX generation
+- LaTeX generation
+- optional template rendering
+
+Step 4: Export
+- paper.md
+- main.tex
+- refs.bib
+- figures/
+- ZIP bundle
+
+##Output Bundle
+final_project/
+├── paper.md
+├── main.tex
+├── refs.bib
+└── figures/
+    ├── xxx.png
+    ├── yyy.jpg
+    └── ...
+
+final_project.zip
+
+##Notes and Limitations
+- BibTeX generation is currently draft-level and may hallucinate entries.
+- The system is designed to reduce fabrication, but all outputs still require human verification.
+- If experiment data is incomplete, generated sections may become generic.
+- Journal template rendering is best-effort and depends on template structure.
+- A retrieval-based literature verification component is still needed for production-grade reference quality.
+
+##Utility Script
+```bash
+python tools/export_requirements.py
+
+This script scans Python imports in the project and writes a lightweight dependency list to:
+requirements.project.txt
+
+##Citation
+
+@article{paperorchestrator2025,
+  title={PaperOrchestrator: An LLM-Orchestrated Multi-Agent Pipeline for Automated End-to-End Scientific Paper Writing},
+  author={Anonymous},
+  journal={Preprint},
+  year={2025}
+}
+##Acknowledgment
+
+This project focuses on structured LLM-based academic writing with an emphasis on:
+- controllability
+- reproducibility
+- bilingual generation
+- LaTeX robustness
+- template-aware export
+
+##License
+MIT License
