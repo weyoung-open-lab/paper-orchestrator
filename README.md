@@ -340,8 +340,9 @@ source .venv/bin/activate
 pip install gradio anthropic
 ```
 ### Optional:
-### pip install -r requirements.project.txt
-
+```bash
+pip install -r requirements.project.txt
+```
 ### 4) Set environment variables
 export ANTHROPIC_API_KEY=your_api_key
 export ANTHROPIC_BASE_URL=your_optional_base_url
@@ -409,18 +410,19 @@ final_project.zip
 ##Utility Script
 ```bash
 python tools/export_requirements.py
-
+```
 This script scans Python imports in the project and writes a lightweight dependency list to:
 requirements.project.txt
 
 ##Citation
-
+```bash
 @article{paperorchestrator2025,
   title={PaperOrchestrator: An LLM-Orchestrated Multi-Agent Pipeline for Automated End-to-End Scientific Paper Writing},
   author={Anonymous},
   journal={Preprint},
   year={2025}
 }
+```
 ##Acknowledgment
 
 This project focuses on structured LLM-based academic writing with an emphasis on:
@@ -431,4 +433,6 @@ This project focuses on structured LLM-based academic writing with an emphasis o
 - template-aware export
 
 ##License
+```bash
 MIT License
+```
