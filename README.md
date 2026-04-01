@@ -71,6 +71,7 @@ paper-orchestrator/
 ├── tools/
 │   └── export_requirements.py     # Utility script to scan imports and export a lightweight requirements.project.txt
 └── README.md                      # Project documentation
+```
 ## System Architecture
 
 PaperOrchestrator is organized as a layered pipeline system:
