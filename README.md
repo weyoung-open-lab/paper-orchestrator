@@ -357,7 +357,7 @@ export ANTHROPIC_BASE_URL=your_optional_base_url
 ```bash
 python app/gradio_app.py
 ```
-##Example Usage
+## Example Usage
 Step 1: Initialize
 - Anthropic API key
 - model
@@ -388,7 +388,7 @@ Step 4: Export
 - figures/
 - ZIP bundle
 
-##Output Bundle
+## Output Bundle
 final_project/
 ├── paper.md
 ├── main.tex
@@ -400,21 +400,21 @@ final_project/
 
 final_project.zip
 
-##Notes and Limitations
+## Notes and Limitations
 - BibTeX generation is currently draft-level and may hallucinate entries.
 - The system is designed to reduce fabrication, but all outputs still require human verification.
 - If experiment data is incomplete, generated sections may become generic.
 - Journal template rendering is best-effort and depends on template structure.
 - A retrieval-based literature verification component is still needed for production-grade reference quality.
 
-##Utility Script
+## Utility Script
 ```bash
 python tools/export_requirements.py
 ```
 This script scans Python imports in the project and writes a lightweight dependency list to:
 requirements.project.txt
 
-##Citation
+## Citation
 ```bash
 @article{paperorchestrator2025,
   title={PaperOrchestrator: An LLM-Orchestrated Multi-Agent Pipeline for Automated End-to-End Scientific Paper Writing},
@@ -423,7 +423,7 @@ requirements.project.txt
   year={2025}
 }
 ```
-##Acknowledgment
+## Acknowledgment
 
 This project focuses on structured LLM-based academic writing with an emphasis on:
 - controllability
