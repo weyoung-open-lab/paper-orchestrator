@@ -417,13 +417,11 @@ requirements.project.txt
 ## Citation
 ```bash
 @article{yuan2026paperorchestrator,
-  title={PaperOrchestrator: An LLM-Orchestrated Multi-Agent Pipeline for Automated End-to-End Scientific Paper Writing},
-  author={Yuan, C. and Wei, T. and Li, C. and others},
-  journal={Journal of King Saud University - Computer and Information Sciences},
+  title={PaperOrchestrator: An LLM-Orchestrated multi-agent pipeline for automated end-to-end scientific paper writing},
+  author={Yuan, Chunhong and Wei, Tianshi and Li, Chuangqi and Yi, Xing and Liu, Shengrui and Zhang, Zixin and Cai, Yule and Du, Xinke},
+  journal={Journal of King Saud University Computer and Information Sciences},
   year={2026},
-  publisher={Springer},
-  doi={10.1007/s44443-026-00708-4},
-  url={https://doi.org/10.1007/s44443-026-00708-4}
+  publisher={Springer}
 }
 ```
 ## Acknowledgment
